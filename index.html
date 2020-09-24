@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Survey to Rule them All</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="main-title text-center"></h1>
+            <p id="description" class="description text-center">Speak, friend, and enter</p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>Which faction or kingdom(oficial and during the LoTR) is your favourite from these options?</p>
+                <select name="kingdom" id="dropdown" class="form-control" required>
+                    <option value="gondor">Gondor, near the Delta of the Anduin, ruled over by the Steward of Gondor
+                    </option>
+                    <option value="rohan">Rohan, ruled by the descendants of Eorl the Young</option>
+                    <option value="erebor">Erebor, the kingdom of the Dwarves in the Lonely Mountain, ruled by Dain II
+                    </option>
+                    <option value="dale">Dale, ruled over by descendants of Bard the Bowman</option>
+                    <option value="mirkwood">Elven kingdom in Mirkwood, ruled by Thranduil</option>
+                    <option value="mordor">Mordor, completely dominated by Sauron</option>
+                    <option value="lothlorien">Lothlorien, governed by Celeborn and Galadriel</option>
+                    <option value="rivendell">Rivendell, established and presided over by Elrond</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Which one of the Big Three is your favourite?</p>
+                <label>
+                    <input type="radio" name="big-three" value="aragorn" class="input-radio" checked />Aragorn
+                </label>
+                <label>
+                    <input type="radio" name="big-three" value="legolas" class="input-radio" checked />Legolas
+                </label>
+                <label>
+                    <input type="radio" name="big-three" value="gimli" class="input-radio" checked />Gimli
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What would you like to be added?</p>
+                <label>
+                    <input type="checkbox" name="prefer" value="weapons" class="input-checkbox">
+                    Fvourite Weapon
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="horse" class="input-checkbox">
+                    Favourite Horse
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="song" class="input-checkbox">
+                    Favourite Song
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="poem" class="input-checkbox">
+                    Favourite Poem
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="quote" class="input-checkbox">
+                    Favourite Quote
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comments" class="input-textarea"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
